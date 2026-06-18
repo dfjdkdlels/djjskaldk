@@ -1,0 +1,7 @@
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f9f9f9; padding: 20px; }
+.container { max-width: 500px; margin: auto; }
+.main-block { background: #fff5e6; padding: 15px; border-radius: 10px; margin-bottom: 20px; border: 1px solid #ffe0b2; }
+details { background: white; margin-bottom: 10px; padding: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+summary { font-weight: bold; cursor: pointer; color: #d35400; padding: 5px; outline: none; }
+ul { margin-top: 10px; padding-left: 20px; color: #555; }
+li { margin-bottom: 5px; }
