@@ -1,5 +1,14 @@
-body { font-family: sans-serif; background: #0b0e14; color: #fff; padding: 20px; }
-.card { background: #161b22; padding: 15px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #30363d; }
-summary { cursor: pointer; font-weight: bold; color: #ffaf40; }
-.details-content { margin-top: 10px; color: #ccc; }
-nav a { color: #fff; margin-right: 15px; text-decoration: none; }
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #0b0e14; color: #e2e8f0; display: flex; }
+
+/* Бокове меню */
+.sidebar { width: 260px; height: 100vh; background: #161b22; position: fixed; padding: 30px 20px; border-right: 1px solid #30363d; }
+.logo { font-size: 20px; font-weight: bold; color: #ffaf40; margin-bottom: 40px; }
+.sidebar a { display: block; color: #a0aec0; padding: 15px 10px; text-decoration: none; border-radius: 8px; transition: 0.3s; }
+.sidebar a:hover { background: #262c36; color: #ffaf40; }
+
+/* Контент */
+.content { margin-left: 300px; padding: 40px; width: 100%; max-width: 800px; }
+h1 { color: #ffffff; font-size: 28px; margin-bottom: 30px; }
+.card { background: #161b22; padding: 20px; border-radius: 12px; border: 1px solid #2d3748; margin-bottom: 15px; }
+.card a { color: #ffaf40; text-decoration: none; font-weight: bold; display: block; }
+.card a:hover { text-decoration: underline; }
