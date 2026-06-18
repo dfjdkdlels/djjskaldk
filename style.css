@@ -1,19 +1,43 @@
-body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #0b0e14; color: #fff; display: flex; }
+/* Основні налаштування */
+body { 
+    margin: 0; 
+    font-family: 'Segoe UI', Roboto, sans-serif; 
+    background-color: #0b0e14; 
+    color: #e2e8f0; 
+    display: flex; 
+}
 
-/* Боковое меню */
-.sidebar { width: 240px; height: 100vh; background: #161b22; position: fixed; padding: 20px; border-right: 1px solid #30363d; }
-.logo { font-size: 24px; font-weight: bold; color: #ffaf40; margin-bottom: 30px; }
-.sidebar a { display: block; color: #c9d1d9; padding: 12px 0; text-decoration: none; border-bottom: 1px solid #21262d; }
-.sidebar a:hover { color: #ffaf40; }
+/* Бічне меню */
+.sidebar { 
+    width: 260px; 
+    height: 100vh; 
+    background: #161b22; 
+    position: fixed; 
+    padding: 30px 20px; 
+    border-right: 1px solid #30363d; 
+}
+.logo { font-size: 20px; font-weight: bold; color: #ffaf40; margin-bottom: 40px; letter-spacing: 1px; }
+.sidebar a { 
+    display: block; 
+    color: #a0aec0; 
+    padding: 15px 10px; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    transition: 0.3s; 
+}
+.sidebar a:hover { background: #262c36; color: #ffaf40; }
 
-/* Основной контент */
-.content { margin-left: 280px; padding: 40px; width: 100%; }
-h1 { color: #ffaf40; margin-bottom: 30px; }
-h2 { border-left: 4px solid #ffaf40; padding-left: 15px; margin-top: 40px; }
+/* Основний контент */
+.content { margin-left: 300px; padding: 40px; width: 100%; max-width: 900px; }
+h1 { color: #ffffff; font-size: 32px; margin-bottom: 30px; }
+h2 { color: #ffaf40; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
 
-/* Элементы */
-details { background: #1c2128; padding: 15px; border-radius: 10px; margin-bottom: 10px; border: 1px solid #30363d; }
-summary { font-weight: bold; cursor: pointer; color: #f8c291; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-.card { background: #161b22; padding: 20px; border-radius: 12px; border: 1px solid #30363d; }
-ul { margin-top: 10px; color: #adb5bd; }
+/* Картки та списки */
+details { background: #161b22; margin-bottom: 15px; padding: 15px; border-radius: 12px; border: 1px solid #2d3748; }
+summary { font-weight: 600; cursor: pointer; color: #cbd5e0; outline: none; }
+ul { margin-top: 15px; padding-left: 20px; color: #a0aec0; }
+li { margin-bottom: 8px; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+.card { background: #161b22; padding: 25px; border-radius: 15px; border: 1px solid #2d3748; text-align: center; }
+.card h3 { color: #ffaf40; margin-top: 0; }
